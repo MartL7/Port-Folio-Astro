@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/jost": "^5.0.18",
+    "@fontsource/ubuntu-mono": "^5.0.19",
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "astro": "^4.5.15",
     "tailwindcss": "^3.4.3"
   },

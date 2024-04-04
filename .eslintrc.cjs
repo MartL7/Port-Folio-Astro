@@ -15,6 +15,21 @@ module.exports = {
     node: true
   },
   rules: {
-    // Puedes agregar reglas adicionales aquí si es necesario
-  }
+    '@typescript-eslint/indent': ['error', 2],
+    'indent': 'off'
+  },
+  overrides: [
+    {
+      files: ['*.astro'],
+      parser: 'astro-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.astro']
+      },
+      rules: {
+        '@typescript-eslint/no-invalid-void-type': 'off',
+        'no-undef': 'off'
+      }
+    }
+  ]
 }

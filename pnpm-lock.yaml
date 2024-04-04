@@ -8,6 +8,15 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.5.15)(tailwindcss@3.4.3)
+  '@fontsource-variable/jost':
+    specifier: ^5.0.18
+    version: 5.0.18
+  '@fontsource/ubuntu-mono':
+    specifier: ^5.0.19
+    version: 5.0.19
+  '@fortawesome/fontawesome-free':
+    specifier: ^6.5.2
+    version: 6.5.2
   astro:
     specifier: ^4.5.15
     version: 4.5.15(typescript@5.4.3)
@@ -802,6 +811,20 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource-variable/jost@5.0.18:
+    resolution: {integrity: sha512-HjW7Zfszf4Veb2ybgK68azRCT4yvX7NcY7wDBSICAyvRbnrbEmsNm2HWd1r13hG1YEyBYUdMjiZRkauHAFPQFw==}
+    dev: false
+
+  /@fontsource/ubuntu-mono@5.0.19:
+    resolution: {integrity: sha512-98JGlEjX6QsY77sLyQhhdX/bK+rzUZd5TtK5nCA9EamrtrgPeqoUdn/SIZnCY7efWAlyzKeLnrbgleRSvHQw9g==}
+    dev: false
+
+  /@fortawesome/fontawesome-free@6.5.2:
+    resolution: {integrity: sha512-hRILoInAx8GNT5IMkrtIt9blOdrqHOnPBH+k70aWUAqPZPgopb9G5EQJFpaBx/S8zp2fC+mPW349Bziuk1o28Q==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
 
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}

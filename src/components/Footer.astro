@@ -1,0 +1,30 @@
+---
+import GithubIcon from '@/components/icons/Github.astro'
+import InstagramIcon from '@/components/icons/Instagram.astro'
+---
+
+<footer class="mt-20 md:px-5 flex w-full flex-col place-items-center border-t-2 border-primary pb-20 pt-6 md:flex-row md:justify-between">
+  <span class="text-center text-white/50">
+    © 2024 PortFolio Geovany <strong> by Geovas </strong> <span aria-hidden="true" class="hidden md:inline"> | </span>
+    <br aria-hidden="true" class="block md:hidden" /> Casi Todos los derechos reservados.
+  </span>
+
+  <span aria-hidden="true" class="mt-6 w-full border-t-2 border-primary pt-6 md:hidden"> </span>
+  <nav>
+    <ul class="flex flex-row items-center gap-x-4" aria-label="redes sociales">
+      <li>
+        <a target="_blank" rel="noopener" href="https://github.com/MartL7"
+          class="inline-block any-hover:scale-125 any-hover:opacity-70 motion-safe:transition hover:scale-110">
+          <GithubIcon class="size-8 opacity-30 hover:opacity-100 hover:text-blue-200/90 transition" />
+        </a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://instagram.com/geovx_lg"
+          class="inline-block any-hover:scale-125 any-hover:opacity-70 motion-safe:transition hover:scale-110">
+          <InstagramIcon class="size-8 opacity-30 hover:opacity-100 hover:text-blue-200/90 transition"/>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

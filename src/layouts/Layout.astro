@@ -1,31 +1,81 @@
 ---
+import '@fontsource-variable/jost'
+import '@fortawesome/fontawesome-free/css/all.css'
+import Footer from '@/components/Footer.astro'
+
 interface Props {
-	title: string;
+  title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portafolio de Trabajo FullStack JR - Geovany Rincon." />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <meta name="author" content="Geovany Rincon">
+    <meta name="keywords" content="fullstack, desarrollador, portafolio, junior, programador">
+    <meta property="og:title" content="PortFolio Geovany Rincon - 😺" />
+    <meta property="og:description" content="Portafolio de Trabajo FullStack JR - Geovany Rincon." />
+    <meta property="og:image" content="/img/image-share.png" />
+    <meta property="og:image:alt" content="PortFolio Geovany Rincon" />
+    <meta property="og:url" content="https://portafolio-geovas.vercel.app" />
+    <!-- Based in design of Midudev -> Thanks 💗 -->
+  </head>
+  <body>
+
+    <div class="max-w-[820px] mt-9 md:mt-4">
+      <slot />
+      <Footer />
+    </div>
+
+  </body>
 </html>
+
 <style is:global>
-	:root {
-		color-scheme: dark;
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
+:root {
+  color-scheme: dark;
+}
+
+html {
+  font-family: 'Jost Variable', sans-serif;
+  background: #13151a;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.shadow-text-custom {
+  text-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 30px orange;
+}
+
+.shadow-text-green {
+  text-shadow: 0 0 5px green, 0 0 15px green, 0 0 30px green;
+}
+
+.shadow-text-blue {
+  text-shadow: 0 0 5px blue, 0 0 15px blue, 0 0 30px blue;
+}
+
+.shadow-text-purple {
+  text-shadow: 0 0 5px purple, 0 0 15px purple, 0 0 30px purple;
+}
+
+.shadow-border-custom {
+  border: 2px solid white;
+  box-shadow: inset 0 0 5px red, 0 0 10px red;
+}
 </style>

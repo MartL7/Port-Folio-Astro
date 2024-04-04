@@ -1,0 +1,22 @@
+---
+import GithubIcon from '@/components/icons/Github.astro'
+---
+
+<article class="border shadow-border-custom rounded-2xl col-start-2 col-end-3 row-start-4 row-end-5 sm:row-start-3 sm:row-end-4 sm:col-start-1 sm:col-end-3 h-auto">
+  <a href="https://github.com/MartL7" rel="noopener" target="_blank">
+    <div class="size-full flex flex-col justify-between relative p-5">
+      <img src="/img/gif-db.gif" alt="{{ $title }}" class="object-cover rounded-2xl absolute inset-0 size-full opacity-30">
+
+      <aside class="">
+        <GithubIcon class="size-7"></GithubIcon>
+      </aside>
+
+      <aside class="flex flex-col">
+        <span class="text-xl sm:text-2xl font-bold font-ubuntu-mono"> GitHub</span>
+        <p class="text-sm font-semibold sm:text-xl"> Donde subo
+          <span class="text-green-300/90"> mis proyectos que realizo.</span>
+        </p>
+      </aside>
+    </div>
+  </a>
+</article>

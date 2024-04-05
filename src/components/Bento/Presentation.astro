@@ -3,21 +3,43 @@ import GithubIcon from '@/components/icons/Github.astro'
 import LinkedinIcon from '@/components/icons/Linkedin.astro'
 ---
 <div class="border shadow-border-custom rounded-2xl col-start-1 col-end-3 h-auto">
-  <h1 class="text-white shadow-text-purple font-bold text-3xl font-ubuntu-mono sm:px-10 my-2 md:my-3 px-4"> Geovany Rincón
-  </h1>
 
-  <p class="text-white shadow-text-custom font-bold text-xl sm:px-10 max-w-lg text-pretty md:max-w-none md:px-5 px-5 my-2 md:my-4"> Hola! Soy un joven de 17 años, amante de la programación en especial el desarrollo web. Listo para aprender nuevas tecnologías y siempre estoy en busca de nuevos retos.
-  </p>
-  <ul class="flex justify-end items-end">
-    <div class="flex gap-x-5 p-5">
-      <a href="https:github.com/MartL7" target="_blank" class="hover:text-gray-400 hover:scale-110 transition inline-block">
-        <GithubIcon class="size-7"/>
-      </a>
-      <a href="https://linkedin.com/" target="_blank" class="hover:text-gray-400 hover:scale-110 transition inline-block">
-        <LinkedinIcon class="size-7" />
-      </a>
-    </div>
-  </ul>
+  <aside class="size-full flex flex-col justify-between p-3">
+    <section>
+      <h1 class="text-white shadow-text-purple font-bold text-3xl font-ubuntu-mono px-4"> Geovany Rincón
+      </h1>
+    </section>
+
+    <section class="max-w-lg p-2 sm:p-0">
+      <p class="text-white shadow-text-custom font-bold text-xl sm:px-4 text-pretty md:px-5 md:my-4 sm:my-2"> ¡Hola! Soy un joven de 17 años, amante de la programación, en especial el desarrollo web. Estoy listo para aprender nuevas tecnologías y siempre estoy en busca de nuevos retos.
+      </p>
+    </section>
+
+    <section>
+      <ul class="flex gap-x-4 justify-end items-center">
+        <li>
+          <a
+            href="https:github.com/MartL7"
+            rel="noopener"
+            aria-label="Github de Geovany Rincón - MartL7"
+            target="_blank"
+            class="hover:text-gray-400 hover:scale-110 transition inline-block">
+            <GithubIcon class="size-7"/>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/"
+            rel="noopener"
+            aria-label="Linkedin de Geovany Rincón"
+            target="_blank"
+            class="hover:text-gray-400 hover:scale-110 transition inline-block">
+            <LinkedinIcon class="size-7" />
+          </a>
+        </li>
+      </ul>
+    </section>
+  </aside>
 </div>
 
 <figure class="border shadow-border-custom rounded-2xl col-start-1 col-end-2 row-start-2 row-end-3 sm:col-start-3 sm:col-end-4 sm:row-start-1 sm:row-end-2">

@@ -1,0 +1,54 @@
+---
+import GithubIcon from '@/components/icons/Github.astro'
+import Button from '@/components/Button.astro'
+import { projects } from '@/consts/projects'
+---
+
+<section class="mt-20 mb-20 grid p-5 sm:p-0 grid-cols-1 sm:grid-cols-2 gap-10">
+  {projects.map((project) => {
+    const { preview, repository } = project
+
+    return (
+      <img src={project.image} alt={`Proyecto ${project.name}`} class="rounded-lg size-auto hover:saturate-150 transition" decoding="async" loading="lazy">
+
+    <div class="flex flex-col gap-y-4">
+      <h1 class="text-2xl sm:text-3xl"> {project.name} </h1>
+      <div class="flex flex-row gap-x-4 items-center">
+        {project.tags.map((tag) => (
+          <span>
+            { typeof tag.icon === 'string'
+              ? <i class={tag.icon}></i>
+              : <tag.icon class="size-6"/>
+            }
+          </span>
+        ))}
+      </div>
+      <p class="text-lg text-pretty text-gray-200/90">
+        {project.description}
+      </p>
+
+      <aside class="flex gap-x-4">
+        {repository && (
+          <Button href
+            href={repository}
+            ariaLabel='Link al Repositorio de Github'
+          >
+            <GithubIcon class="size-6"/>
+            Code
+          </Button>
+        )}
+        {preview && (
+          <Button
+            href={preview}
+            ariaLabel='Ver proyecto en funcionamiento'
+          >
+            <i class="fa-solid fa-link"></i>
+            Preview
+          </Button>
+        )}
+      </aside>
+    </div>
+    )
+  })}
+
+</section>

@@ -30,6 +30,7 @@ export const projects: Project[] = [
     ],
     preview: 'https://cbtis86.edu.mx/cbtis86.edu.mx/admision/Fichas_CBTis86/'
   },
+
   {
     name: 'Control de Créditos de Clientes',
     description: 'Aplicación web para control de Créditos de Clientes de la empresa LOG-IN, con la finalidad de llevar un control de los créditos otorgados a los clientes, así como de los pagos realizados por los mismos. Creada con Astro, TypeScript y Tailwind CSS.',
@@ -41,17 +42,42 @@ export const projects: Project[] = [
       { name: 'Sqlite', icon: 'fas fa-database text-blue-500 text-2xl sm:text-2xl' }
     ]
   },
+
   {
-    name: 'Tablas de Estadísticas',
-    description: 'Tablas de Distribución de Frecuencias, con la finalidad de mostrar la información de una manera más visual y entendible. Creada con React, JavaScript y Tailwind CSS.',
-    image: '/img/img-projects/tablas-estadistica.webp',
+    name: 'Forever 6M',
+    description: 'Anuario de compañeros del Grupo M del CBTis 86, con la funcionalidad de reaccionar, comentar a cada perfil, inspirado en el diseño de La Velada IV. Creado con Astro, TypeScript, SQLite, Tailwind CSS',
+    image: '/img/img-projects/forever-6m.webp',
     tags: [
-      { name: 'React', icon: 'fab fa-react text-blue-400 text-2xl sm:text-2xl' },
-      { name: 'JavaScript', icon: 'fab fa-js-square text-yellow-500 text-2xl sm:text-3xl' },
-      { name: 'Tailwind CSS', icon: TailwindIcon }
+      { name: 'Astro', icon: AstroIcon },
+      { name: 'TypeScript', icon: TypeScriptIcon },
+      { name: 'Tailwind CSS', icon: TailwindIcon },
+      { name: 'Sqlite', icon: 'fas fa-database text-blue-500 text-2xl sm:text-2xl' }
     ],
-    repository: 'https://github.com/MartL7/tablas-estadistica.git',
-    preview: 'https://estadistica-tablas.vercel.app/'
+    repository: 'https://github.com/MartL7/Votaciones-fotos-random',
+    preview: 'https://forever6m.vercel.app/'
+  },
+
+  {
+    name: 'Control de Inventario del Laboratorio',
+    description: 'Control del inventario de equipo, materiales, reactivos, libros del Laboratorio de Química del CBTis 86. Creada con Astro, TypeScript, TailwindCSS, SQLite',
+    image: '/img/img-projects/inventario-quimica.webp',
+    tags: [
+      { name: 'Astro', icon: AstroIcon },
+      { name: 'TypeScript', icon: TypeScriptIcon },
+      { name: 'Tailwind CSS', icon: TailwindIcon },
+      { name: 'Sqlite', icon: 'fas fa-database text-blue-500 text-2xl sm:text-2xl' }
+    ]
+  },
+
+  {
+    name: 'Bot De WhatsApp',
+    description: 'Bot de WhatsApp para la empresa LOGIN Mayorista integrando la API Oficial de WhatsApp y la API de Openai. Creado en NodeJS con JavaScript',
+    image: '/img/img-projects/bot-whatsapp.webp',
+    tags: [
+      { name: 'NodeJS', icon: 'fab fa-node-js text-green-500/70 text-2xl sm:text-3xl' },
+      { name: 'JavaScript', icon: 'fab fa-js-square text-yellow-500 text-2xl sm:text-2xl' }
+    ],
+    preview: 'https://wa.me/527762269123?text=hola'
   }
 ]
 

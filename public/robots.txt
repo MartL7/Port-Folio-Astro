@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://geovas.vercel.app
+
+# Sitemaps
+Sitemap: https://geovas.vercel.app/sitemap.xml

@@ -2,6 +2,7 @@
 import '@fontsource-variable/jost'
 import '@fortawesome/fontawesome-free/css/all.css'
 import Footer from '@/components/Footer.astro'
+import SEO from '@/components/SEO.astro'
 
 interface Props {
   title: string
@@ -21,13 +22,7 @@ const { title } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
 
-    <meta name="author" content="Geovany Rincon">
-    <meta name="keywords" content="fullstack, desarrollador, portafolio, junior, programador">
-    <meta property="og:title" content="PortFolio Geovany Rincon - 😺" />
-    <meta property="og:description" content="Portafolio de Trabajo FullStack JR - Geovany Rincon." />
-    <meta property="og:image" content="/img/image-share-op.webp" />
-    <meta property="og:image:alt" content="PortFolio Geovany Rincon" />
-    <meta property="og:url" content="https://portafolio-geovas.vercel.app" />
+    <SEO />
     <!-- Based in design of Midudev -> Thanks 💗 -->
   </head>
   <body class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">

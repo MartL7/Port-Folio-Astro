@@ -1,3 +1,8 @@
-# PortFolio Geovany Rincón - Geovas 😺
+# 👨🏻‍💻 PortFolio Geovany Rincón - Geovas
 
-![Imagen del proyecto](/public/img/image-share.png)
+<div align="center">
+<a href="https://porfolio.dev/">
+<img src="./public/img/image-share.webp" />
+</a>
+<p></p>
+</div>

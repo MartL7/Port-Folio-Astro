@@ -7,10 +7,10 @@ export const experience = [
       'Desarrollo de aplicaciones web para la gestión de recursos y alumnos. Contribuí tanto en el fronted como en el backend durante el desarollo de la aplicación. Implementación de metodologías ágiles y buenas prácticas de desarrollo.'
   },
   {
-    date: 'Marzo 2024',
+    date: 'Marzo 2024 - Agosto 2024',
     title: 'Freelance FullStack Developer',
     company: 'Freelance',
-    description: 'Desarrollo de aplicación web para la gestion de clientes, control del inventario de la empresa LOG-IN.'
+    description: 'Desarrollo de aplicaciones web fullstack para la gestion de clientes, control del inventario, encuestas para clientes, membresias de la empresa LOGIN MAYORISTA.'
   },
   {
     date: 'Actualmente...',

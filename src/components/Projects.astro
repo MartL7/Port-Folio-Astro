@@ -4,57 +4,76 @@ import Button from '@/components/Button.astro'
 import { projects } from '@/consts/projects'
 ---
 
-<section class="mt-20 mb-20 grid p-5 sm:p-0 grid-cols-1 sm:grid-cols-2 gap-10">
-  {projects.map((project) => {
-    const { preview, repository } = project
+<section class="mt-20 sm:mt-40 flex flex-col justify-center items-center mb-20 sm:mb-40 gap-7 max-w-4xl">
+  <div class="flex flex-col justify-center items-center gap-4 text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl">
+      Revisa mis <span class="text-blue-600/90"> Proyectos </span>
+    </h2>
 
-    return (
-      <img
-        src={project.image}
-        alt={`Proyecto ${project.name}`}
-        class="rounded-lg size-auto object-cover hover:saturate-150 transition"
-        decoding="async"
-        loading="lazy"
-      />
+    <p class="px-10 text-[18px] text-white/80 text-center [text-wrap:balance]">
+      Dale un vistazo a un poco de mi trabajo.
+    </p>
+  </div>
 
-      <div class="flex flex-col gap-y-4">
-        <h1 class="text-2xl sm:text-3xl"> {project.name} </h1>
-        <div class="flex flex-row gap-x-4 items-center">
-          {project.tags.map((tag) => (
-            <span>
-              { typeof tag.icon === 'string'
-                ? <i class={tag.icon} title={tag.name} />
-                : <tag.icon class="size-6"/>
-              }
-            </span>
-          ))}
-        </div>
-        <p class="text-lg text-pretty text-gray-200/90">
-          {project.description}
-        </p>
+  <aside class="grid grid-cols-1 sm:grid-cols-2 gap-8 p-5 sm:p-0">
+    {
+      projects.map((project) => (
+        <article class="relative flex flex-col items-center justify-center w-full h-auto transition-all bg-[#121226]/50 border border-primary/40 rounded-[20px] group overflow-hidden lg:hover:scale-105">
+          <div class="w-full p-[14px] rounded transition flex flex-col gap-4">
+            <figure class="flex items-center justify-center">
+              <img
+                decoding="async"
+                loading="lazy"
+                class="object-cover w-full sm:h-[200px] aspect-square rounded-[10px]"
+                src={project.image}
+                alt={`Proyecto ${project.name}`}
+              />
+              <img
+                decoding="async"
+                loading="lazy"
+                class="absolute opacity-70 transform-gpu blur-lg -z-10 block object-cover w-full sm:h-[200px] aspect-square transition bg-white rounded-[10px]"
+                src={project.image}
+                alt={`Proyecto ${project.name}`}
+              />
+            </figure>
+            <header class="flex flex-col gap-2 items-center justify-center mt-4 gap-x-2">
+              <h3 class="text-lg sm:text-xl font-bold text-center text-primary">{project.name}</h3>
+              <aside class="flex justify-center items-center gap-x-4">
+                {project.tags.map((tag) => (
+                  <span>
+                    { typeof tag.icon === 'string'
+                      ? <i class={`${tag.icon} text-lg`} title={tag.name} />
+                      : <tag.icon class="size-5" />
+                    }
+                  </span>
+                ))}
+              </aside>
+            </header>
 
-        <aside class="flex gap-x-4">
-          {repository && (
-            <Button href
-              href={repository}
-              ariaLabel='Link al Repositorio de Github'
-            >
-              <GithubIcon class="size-6"/>
-              Code
-            </Button>
-          )}
-          {preview && (
-            <Button
-              href={preview}
-              ariaLabel='Ver proyecto en funcionamiento'
-            >
-              <i class="fa-solid fa-link" />
-              Preview
-            </Button>
-          )}
-        </aside>
-      </div>
-    )
-  })}
+            <p class="text-lg text-pretty text-secondary text-center">
+              {project.description}
+            </p>
 
+            <aside class="flex justify-center items-center gap-2">
+              {project.repository && (
+                <Button href={project.repository} ariaLabel='Link al Repositorio de Github'>
+                  <GithubIcon class="size-6"/>
+                  Code
+                </Button>
+              )}
+              {project.preview && (
+                <Button
+                  href={project.preview}
+                  ariaLabel='Ver proyecto en funcionamiento'
+                >
+                  <i class="fa-solid fa-link" />
+                  Preview
+                </Button>
+              )}
+            </aside>
+          </div>
+        </article>
+      ))
+    }
+  </aside>
 </section>

@@ -25,7 +25,19 @@ const { title } = Astro.props
     <SEO />
     <!-- Based in design of Midudev -> Thanks 💗 -->
   </head>
-  <body class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+  <body>
+
+    <div class="fixed left-0 top-0 -z-10 h-full w-full">
+      <div class="relative h-full w-full bg-slate-950">
+        <div
+          class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"
+        >
+        </div><div
+          class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"
+        >
+        </div>
+      </div>
+    </div>
 
     <div class="max-w-[820px] mt-9 md:mt-4">
       <slot />

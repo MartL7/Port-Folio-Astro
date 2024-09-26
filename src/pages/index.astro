@@ -4,6 +4,8 @@ import Layout from '@/layouts/Layout.astro'
 import Experience from '@/components/Experience.astro'
 import AboutMe from '@/components/AboutMe.astro'
 import Projects from '@/components/Projects.astro'
+
+export const prerender = true
 ---
 
 <Layout title="Geovany Rincon - PortFolio - 💻">
@@ -12,6 +14,5 @@ import Projects from '@/components/Projects.astro'
     <Experience />
     <Projects />
     <AboutMe />
-    <!-- TODO: Add Projects and navbar ❌ -->
   </main>
 </Layout>

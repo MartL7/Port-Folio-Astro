@@ -1,6 +1,7 @@
 ---
 import GithubIcon from '@/components/icons/Github.astro'
 import LinkedinIcon from '@/components/icons/Linkedin.astro'
+import Age from '@/components/Age.astro'
 ---
 <div class="border shadow-border-custom rounded-2xl col-start-1 col-end-3 h-auto">
 
@@ -11,7 +12,8 @@ import LinkedinIcon from '@/components/icons/Linkedin.astro'
     </section>
 
     <section class="max-w-lg p-2 sm:p-0">
-      <p class="text-white shadow-text-custom font-bold text-xl sm:px-4 text-pretty md:px-5 md:my-4 sm:my-2"> ¡Hola! Soy un joven de 17 años. Empecé en el mundo de la programación a los 15 años y ahora me encanta el desarrollo web. Estoy en busca de nuevos desafios para ampliar mis conocimientos y habilidades.
+      <p class="text-white shadow-text-custom font-bold text-xl sm:px-4 text-pretty md:px-5 md:my-4 sm:my-2"> ¡Hola! Soy un joven de
+        <Age server:defer />años. Empecé en el mundo de la programación a los 15 años y ahora me encanta el desarrollo web. Estoy en busca de nuevos desafios para ampliar mis conocimientos y habilidades.
       </p>
     </section>
 
